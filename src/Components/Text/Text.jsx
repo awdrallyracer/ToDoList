@@ -1,6 +1,7 @@
 import React from "react";
-import state from "./state";
-import reRendererTree from "./render";
+import state from "../../state";
+import reRendererTree from "../../render";
+import s from "./Text.module.css"
 
 const Text = (props) => {
 
@@ -12,8 +13,8 @@ const Text = (props) => {
     }
 
     return (
-        <div>
-            <li ref={task}>{props.element} <button onClick={deleteFromList}>Delete</button></li>
+        <div className={s.center}>
+            <li ref={task}>{props.element} <button onClick={deleteFromList} className={s.button} >Delete</button></li>
         </div>
     )
 }

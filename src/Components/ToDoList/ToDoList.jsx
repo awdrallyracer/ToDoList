@@ -1,7 +1,8 @@
 import React from "react";
-import state from './state'
-import reRendererTree from "./render";
-import Text from "./Text";
+import state from '../../state'
+import reRendererTree from "../../render";
+import Text from "../Text/Text";
+import l from "./ToDoList.module.css"
 
 const ToDoList = () => {
 
@@ -19,9 +20,12 @@ const ToDoList = () => {
     }
 
     return (
-        <div>
-            <textarea ref={newTaskElement} ></textarea>
-            <button onClick={addNewTask}>Add</button>
+        <div className={l.center}>
+            <textarea ref={newTaskElement} className={l.textarea}></textarea>
+            <div>
+            <button onClick={addNewTask} className={l.button} >Add</button>
+            </div>
+
             <div>
                 {taskElements}
             </div>

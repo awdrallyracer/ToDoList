@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ToDoList from './ToDoList';
+import ToDoList from './Components/ToDoList/ToDoList';
 
 let reRendererTree = (state) => {
     const root = ReactDOM.createRoot(document.getElementById('root'));
