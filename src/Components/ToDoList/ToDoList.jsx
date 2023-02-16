@@ -16,6 +16,8 @@ const ToDoList = () => {
             text = '';
             reRendererTree(state);
         }
+        text = '';
+            reRendererTree(state);
     }
 
     return (
